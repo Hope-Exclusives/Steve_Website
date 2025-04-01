@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="back-overlay">
+        <video src="./camera.mp4" autoplay muted loop></video>
+    </div>
+
+
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Neph~Arts
+                 <!-- Fremax-Graphics -->
+            </text>
+        </svg>
+        
+    </div>
+    <div class="text" style="margin: 0; position: relative; top:12%; color: #FFFFFF; font-family:Mea Culpa;font-weight: 400; font-style: normal; font-size: 40px; word-spacing: .7ch">Creativity At Its Best</div>
+
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+.back-overlay{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    z-index: -1;
+}
+.back-overlay video{
+    position: absolute;
+    top: 95%; 
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    /* scale: 120%; */
+    width: auto; height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    /* background-color: #0000001a; */
+}
+
+.back-overlay video::-webkit-media-controls-enclosure{
+    display: none !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #00000007;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'jokerman', sans-serif;
+}
+
+
+.wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex; justify-content: center; align-items: center;
+    background-color: #0000000d;
+    overflow: hidden;
+}
+
+
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #FFFFFF;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(242,210,149,0); stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(242,210,149,0); stroke: rgba(255,255,255,1); }
+	80%  {fill: rgba(242,210,149,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
+	100% {
+		fill: rgba(242,210,149,1); stroke: rgba(255,255,255,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #000000b1};
+
+
+    </style>
+</body>
+</html>

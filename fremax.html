@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                <!-- Neph~Arts -->
+                 Fremax-Graphics
+            </text>
+        </svg>
+    </div>
+
+    <style>
+
+    @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        font-family: 'jokerman', sans-serif;
+    }
+
+
+    .wrapper{
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        display: flex; justify-content: center; align-items: center;
+        background-color: #000000;
+        overflow: hidden;
+    }
+
+
+
+    svg {
+        font-family: "Russo One", sans-serif;
+        width: 100%; height: 100%;
+    }
+    svg text {
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #FFFFFF;
+        font-size: 100px;
+    }
+    @keyframes stroke {
+        0%   {
+            fill: rgba(242,210,149,0); stroke: rgba(255,255,255,1);
+            stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+        }
+        70%  {fill: rgba(242,210,149,0); stroke: rgba(255,255,255,1); }
+        80%  {fill: rgba(242,210,149,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
+        100% {
+            fill: rgba(242,210,149,1); stroke: rgba(255,255,255,0);
+            stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+        }
+    }
+
+    .wrapper {background-color: #000000};
+
+
+    </style>
+</body>
+</html>
